@@ -132,7 +132,7 @@ def main():
                 print("❌ No Hyderabad slots found")
             
             # Status every 4 hours (480 checks at 30-second intervals)
-            if check_count % 480 == 0:
+            if check_count % 1 == 0:
                 status_msg = f"🤖 *Visa Bot Status*\n\n✅ Check #{check_count}\n🎯 Hunting Hyderabad slots\n📅 Oct 2025 - Jan 2026\n⏰ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
                 
                 # Send directly like the test
